@@ -27,6 +27,7 @@
     "bookmarks",
     "chrome://favicon/",
     "contextMenus",
+    "alarms",
     "notifications",
     "tabs",
     "http://*/*",
