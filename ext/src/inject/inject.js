@@ -29,3 +29,21 @@ var cashbackSites = [
 if (cashbackSites.indexOf(window.location.hostname) > -1) {
 	console.warn(window.location.hostname + " ----> Lets save some money");
 }
+
+(function goCHECK() {
+var checkURL = ["web-platform", "web-plattform", "piattaforma-web", "plataforma-web", "-old"];
+var msg = "This page contains old URL - Please look at all element marked in RED! <br/>"+checkURL;
+    for (var i = 0; i < checkURL.length; i++) {
+		var found = false;
+			jQuery("a").each(function() {
+			    if(this.href.indexOf(checkURL[i]) > -1) {
+		            console.warn(this.href + " >>> "+checkURL[i]);
+		            jQuery(this).css({"border":"solid 5px red", "padding":"5px"});
+		            found = true;
+		        }
+			});
+		if (found){
+			jQuery("body > div.header").before("<div class='alertt'>"+ msg +"</div>")
+		}	
+    }
+}());

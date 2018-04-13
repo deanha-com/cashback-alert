@@ -51,6 +51,7 @@
         "https://*/*"
       ],
       "js": [
+        "js/jquery/jquery.js",
         "src/inject/inject.js"
       ]
     }

@@ -1,17 +1,40 @@
 <!doctype html>
 <style type="text/css">
+body {
+	padding:  0;
+	margin:  0;
+}
+	.header {
+		align-items: center;
+		background: linear-gradient(160deg, #5b15d2, #280265);
+		height: 4rem;
+		display: flex;
+		color:  #fff;
+	}
 	#mainPopup {
-		padding: 10px;
-		height: 200px;
-		width: 400px;
+		padding: 15px;
+		min-height: 150px;
+		min-width: 350px;
 		font-family: Helvetica, Ubuntu, Arial, sans-serif;
 	}
 	h1 {
-		font-size: 2em;
+		font-size: 1.8em;
+		padding:  15px;
+	}
+	a.btn {
+	    background-color: #03a9f4;
+	    padding: 10px;
+	    text-decoration: none;
+	    color: #fff;
+	    display: inline-block;
 	}
 </style>
+<div class="header">
+    <h1>Cashback Alert</h1>
+</div>
 
 <div id="mainPopup">
-<h1>DeanoChrome</h1>
-<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/browser_action/browser_action.html. The CSS is there, too.</p>
+<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/browser_action/browser_action.html. The CSS is there, too.
+</p>
+<a class="btn" href="http://two-one.co/app/" target="_blank">Go to To-Do App</a>
 </div>

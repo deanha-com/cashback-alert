@@ -1,3 +1,22 @@
 /**
  * Place your custom CSS styles here.
  **/
+
+ div.env {
+    background: red;
+    position: fixed;
+    top: 0;
+    padding: 8px;
+    left: 0;
+    z-index: 200;
+    color: white;
+    text-transform: uppercase;
+}
+
+div.alertt {
+    background: #6e0ee8;
+    padding: 5px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
