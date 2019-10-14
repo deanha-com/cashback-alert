@@ -28,6 +28,7 @@ var cashbackSites = [
 
 if (cashbackSites.indexOf(window.location.hostname) > -1) {
 	console.warn(window.location.hostname + " ----> Lets save some money");
+	// alert(window.location.hostname + " ----> Lets save some money");
 }
 
 (function goCHECK() {
